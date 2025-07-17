@@ -31,4 +31,4 @@ opt.undofile = true            -- Lưu lịch sử undo (có thể undo ngay c�
 opt.mouse = "a"                -- Cho phép dùng chuột
 opt.termguicolors = true       -- Hiển thị màu sắc đầy đủ trong terminal
 opt.updatetime = 250           -- Tốc độ update (ms) - ảnh hưởng đến LSP, git signs
-opt.timeoutlen = 300           -- Thời gian chờ phím tắt (ms)
+opt.timeoutlen = 100           -- Thời gian chờ phím tắt (ms)
