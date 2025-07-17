@@ -1,6 +1,3 @@
--- options.lua - Cấu hình cơ bản cho Neovim (Phiên bản đơn giản)
--- Nguồn: https://neovim.io/doc/user/options.html
-
 local opt = vim.opt
 
 -- ==== HIỂN THỊ ====
