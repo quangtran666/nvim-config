@@ -13,10 +13,10 @@ return {
         keymap = {
             preset = 'none',
             ["<Tab>"] = { "accept", "fallback" },
-            ["<Up>"] = { "select_prev", "fallback" },
-            ["<Down>"] = { "select_next", "fallback" },
+            ["<C-j>"] = { "select_prev", "fallback" },
+            ["<C-k>"] = { "select_next", "fallback" },
             ["<C-e>"] = { "hide", "fallback" },
-            ["<C-k>"] = { "show_signature", "hide_signature", "fallback" },
+            ["<C-h>"] = { "show_signature", "hide_signature", "fallback" },
             ["<C-d>"] = { "show_documentation", "hide_documentation", "fallback" },
             ["<C-space>"] = { "show", "fallback" },
             ["<C-Up>"] = { "scroll_documentation_up", "fallback" },

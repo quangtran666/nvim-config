@@ -18,6 +18,8 @@ return {
             "xml",
             "yaml",
             "php",
+            "vimdoc",
+            "go",
         },
         auto_install = true,
     }
