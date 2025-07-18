@@ -1,4 +1,6 @@
 vim.lsp.enable({
     "lua-ls",
-    "gopls"
+    "gopls",
+    "ts-ls",
+    "intelephense"
 })
