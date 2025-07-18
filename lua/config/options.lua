@@ -1,5 +1,9 @@
 local opt = vim.opt
 
+-- ==== LEADER KEY ====
+vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"
+
 -- ==== HIỂN THỊ ====
 opt.number = true              -- Hiển thị số dòng bên trái (1, 2, 3...)
 opt.relativenumber = true      -- Hiển thị số dòng tương đối (giúp jump nhanh với 5j, 3k...)
