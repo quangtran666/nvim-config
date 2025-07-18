@@ -10,13 +10,31 @@ return {
         sources = {
             default = { "lsp", "path", "snippets", "buffer" },
         },
-        -- See :h blink-cmp-config-keymap for defining your own keymap
-        keymap = { preset = 'default' },
-
+        keymap = {
+            preset = 'none',
+            ["<Tab>"] = { "accept", "fallback" },
+            ["<Up>"] = { "select_prev", "fallback" },
+            ["<Down>"] = { "select_next", "fallback" },
+            ["<C-e>"] = { "hide", "fallback" },
+            ["<C-k>"] = { "show_signature", "hide_signature", "fallback" },
+            ["<C-m>"] = { "show_documentation", "hide_documentation", "fallback" },
+            ["<C-space>"] = { "show", "fallback" },
+            ["<C-Up>"] = { "scroll_documentation_up", "fallback" },
+            ["<C-Down>"] = { "scroll_documentation_down", "fallback" },
+        },
         appearance = {
             nerd_font_variant = 'mono'
         },
         completion = {
+            list = {
+                selection = { preselect = true, auto_insert = false },
+            },
+            trigger = {
+                show_on_keyboard = true,
+                show_on_trigger_character = true,
+                show_on_insert_on_trigger_character = true,
+                show_on_accept_on_trigger_character = true,
+            },
             menu = {
                 draw = {
                     gap = 2,
