@@ -17,7 +17,7 @@ return {
             ["<Down>"] = { "select_next", "fallback" },
             ["<C-e>"] = { "hide", "fallback" },
             ["<C-k>"] = { "show_signature", "hide_signature", "fallback" },
-            ["<C-m>"] = { "show_documentation", "hide_documentation", "fallback" },
+            ["<C-d>"] = { "show_documentation", "hide_documentation", "fallback" },
             ["<C-space>"] = { "show", "fallback" },
             ["<C-Up>"] = { "scroll_documentation_up", "fallback" },
             ["<C-Down>"] = { "scroll_documentation_down", "fallback" },
@@ -47,9 +47,19 @@ return {
                     }
                 },
             },
-            documentation = { auto_show = false }
+            documentation = { auto_show = true, auto_show_delay_ms = 100 }
         },
-        fuzzy = { implementation = "prefer_rust_with_warning" }
+        fuzzy = { implementation = "prefer_rust_with_warning" },
+        signature = { enabled = true },
+        cmdline = {
+            enabled = true,
+            keymap = { preset = "inherit" },
+            completion = {
+                menu = {
+                    auto_show = true
+                }
+            }
+        }
     },
     opts_extend = { "sources.default" }
 }

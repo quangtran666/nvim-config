@@ -1,3 +1,4 @@
 vim.lsp.enable({
-    "lua-ls"
+    "lua-ls",
+    "gopls"
 })
